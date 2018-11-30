@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title> kim e-rang pf </title>
+<link rel="stylesheet" type="text/css" href="common/reset.css">
+<link rel="shortcut icon" href="img/kerang.ico">
+<script src="common/jquery-3.3.1.min.js"></script>
+<script src="common/jquery-ui.min.js"></script>
+<script src="common/prefixfree.min.js"></script>
+<script src="common/jquery.mousewheel.min.js"></script>
+<script src="index.js"></script>
+
+<!-- 폰트 링크 -->
+<link href="https://fonts.googleapis.com/css?family=Heebo|Black+Han+Sans" rel="stylesheet">
+<style>
+body { font-family: 'Heebo','Nanum Gothic', sans-serif; }
+article { width: 100%; height: 900px; position: relative; overflow: hidden; }
+h1 { margin: 15px 0 0 25px; }
+.head { position:relative; overflow: hidden; top:25%; width: 100%; z-index: 100; font-weight: bold; }
+.line-wrap1 { padding-left: 10px; font-size: 10em;  white-space: nowrap; margin-bottom: 20px;   transition: .4s;}
+.line-wrap2 { font-family: 'Gothic A1', sans-serif; text-align: center; font-weight: bold; font-size: 8em;  height: 170px; line-height: 140px; color:#f96475; background-color: #fed2c4; white-space: nowrap; transition: .7s; }
+.head div li { display: inline-block; height: 100%; }
+#pf { width: 250px; height: 100px; font-size: 2em; color: #999; position: absolute; right: 0px; bottom:0; }
+#pf-img {left: 30%; position: absolute; top:25%;z-index: 1000; display: none; }
+
+
+/************  두번째 페이지  *****************/
+#two { background-color: #fed2c4; position: relative; overflow: hidden; }
+section { z-index: 0 }
+.overlay {  position: fixed; height: 100%; top: 0;  bottom: 0;  left: 0;  right: 0;  background: rgba(0, 0, 0, 0.7);  transition: opacity 500ms; display:none; z-index: 1000; }
+
+
+.popup {  margin: 0px auto;  margin-right: 5%;
+  padding: 5px;  background: #fff; background-size: cover;  border-radius: 5px;  width: 90%; height: 90%; transition: all 5s ease-in-out; position:absolute; top:50%; left:50%;  transform:translate(-50%, -50%); }
+ #popup2 .popup { width: 50%; height: 70%; } 
+.popup .close {  position: absolute;  top: 20px;
+  right: 30px;  transition: all 200ms; font-size: 50px;  font-weight: bold; text-decoration: none;  color: #FC9D7F; }
+.popup .close:hover { color: #F96475; cursor: pointer; }
+.popup .content {  max-height: 100%;  overflow: auto; padding:5% 0 0 5%; }
+#popup1 .content img {  cursor: pointer; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);   height: 90%; width: 80%; }
+#popup2 .content img, {  cursor: pointer;     height: 250px; float: left; margin: 10px; }
+#popup3 .content img { cursor: pointer;     width: 10%; float: left; margin: 10%; }
+#two p { font-size: 6em; font-weight: bold; position: absolute; right: 5%; top:45%; color:#f96475;  }
+#two #menu1 { position: absolute; top: 35%;  }
+#two #menu2 { position: absolute; top: 45%;  }
+#two #menu3 { position: absolute; top: 55%;  }
+#two section div:nth-child(1) { position:relative;width: 226px; height: 85px;  float: left; z-index: 100; cursor: pointer; }
+#two section div:nth-child(2) { position: absolute; z-index: 10 }
+.off { display: none; }
+.scrlOff { position: fixed;height:100%;width:100%;overflow:hidden !important; }
+</style>
+</head>
+<body>
+<!-- 첫 번째 페이지 -->
+<article id="first">
+	<h1><img src="img/png/logo.png"></h1>
+	<section class="head">
+   		<div class="line-wrap1">
+        	<ul>
+            <li> Hello!</li>
+            <li>The moment you see this portfolio,</li>
+            <li>you'll be wondering about a guy e-rang Kim.</li>
+       		</ul>
+    	</div>
+    	<div class="line-wrap2">
+    		<ul>
+    			<li>안녕하세요! </li>
+    			<li>이 포트폴리오를 보는 순간</li>
+    			<li>당신은 김이랑이라는 사람이 궁금해질 겁니다.</li>
+    		</ul>
+    	</div>
+	</section>
+	<div id="pf">컨펌을 받기위한<br> 나의 마음 :D</div>
+	<div id="pf-img"><img src="img/gif/heart.gif" width="600"></div>
+</article>
+<article id="two">
+	<p>What happens when you click?</p>
+	<section id="menu1">
+		<div class="box">
+			<a class="button"><img src="img/png/menu1.png"></a>
+		</div>
+		<div><img src="img/png/menu1-1.png"></div>
+	</section>
+
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close">&times;</a>
+			<div class="content">
+				<img src="img/design/jpg/pf.jpg">
+			</div>
+		</div>
+	</div>
+	<section id="menu2">
+		<div class="box">
+			<a class="button" href="#popup2"><img src="img/png/menu2.png"></a>
+		</div>
+		<div><img src="img/png/menu2-1.png"></div>
+	</section>
+
+	<div id="popup2" class="overlay">
+		<div class="popup">
+			<a class="close">&times;</a>
+			<div class="content">
+				<a href="design/danironinfo.html" target="_blank" >
+				<img src="img/daniron/image.png"></a>
+			</div>
+		</div>
+	</div>
+	<section id="menu3">
+		<div class="box">
+			<a class="button" href="#popup3"><img src="img/png/menu3.png"></a>
+		</div>
+		<div><img src="img/png/menu3-1.png"></div>
+	</section>
+
+	<div id="popup3" class="overlay">
+		<div class="popup">
+			<a class="close">&times;</a>
+			<div class="content">
+				<a href="publishing/publishing1.html" target="_blank">
+				<img src="img/publishing1/logo.gif"></a>
+				<a href="img/uiux/uiux.png" target="_blank">
+				<img src="img/uiux/main1.png"></a>
+			</div>
+		</div>
+	</div>
+</article>
+</body>
+</html>

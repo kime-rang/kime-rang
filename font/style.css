@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face{
+font-family:'AppleSDGothicNeoB';
+src:url('AppleSDGothicNeoR.eot');
+src:url('AppleSDGothicNeoR.ttf');
+src:local(※), 
+	url('AppleSDGothicNeoR00.woff') format('woff');
+}

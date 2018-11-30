@@ -1,0 +1,70 @@
+@charset "utf-8";
+body { font-family: 'AppleSDGothicNeoB'; }
+#wrap { width: 100%; margin: 0 auto; }
+a { cursor: pointer; color: #555; }
+a:hover { color: #F47196 }
+.on { width: 70px; height: 70px;  }
+article { z-index: 100; }
+
+/***********  header     *****************/
+header #headbg { width: 90%; margin: 0 auto; height: 700px; background-color: #CEBFD8; overflow: hidden; }
+header nav { width: 90%; height: 72px; margin: 0 auto; position: fixed; top: 20px; left: 5%;z-index: 10000; background-color: #fff;}
+header nav #logo { position: absolute; left: 10%; width: 160px; height: 70px; }
+header nav #logo img { padding:3px; }
+header nav ul { position: absolute; top:30px; right: 5% }
+header nav ul li { float: left; width: 100px; margin: 0 10px; font-size: 1.2em; padding: 0 10px; font-weight: 700; }
+header #txt { position:absolute; top: 35%; left: 20%; color: #fff }
+header #txt h1 { font-size: 3.5em; font-weight: 500; }
+header #txt h2 { font-size: 1.2em; line-height: 1.4em; margin: 50px 0; }
+header #txt a { font-size:1.5em; color: #fff; text-align: center; line-height: 55px; font-weight: 500; }
+header #txt a div { border: 1px solid #fff;  width: 160px; height: 55px;  }
+header #imgbg { position: absolute; top: 20%; left: 51%; opacity: .5; }
+header #img { position: absolute; top: 20%; left: 50%; }
+
+/***********  container     *****************/
+.container1 { width: 80%; height: 600px; margin: 300px auto; overflow: hidden; position: relative; }
+.container1 .left { position: absolute; top:50%; left: 5%; width: 40%; }
+.container1 #center { position: absolute; top:50%; left: 50%; width: 35%; }
+.container1 #center h1 { font-size: 3.5em; font-weight: 500; }
+.container1 #center h2 { font-size: 1.2em; line-height: 1.4em; margin: 50px 0; }
+.container1 #center a { font-size:1.5em; color: #fff; text-align: center; line-height: 55px; font-weight: 500; }
+.container1 #center a div { background-color: #CEBFD8;  width: 160px; height: 55px;  }
+.container1 .right { position: absolute; top: 50%; left: 85%;}
+.container1 .right #macarontap { width: 10%; float: left; }
+.container1 .right #macarontap div { position: relative; width: 70px; height: 70px; }
+.container1 .right #macarontap div img {  position:absolute; top:50%; left:50%;  transform:translate(-50%, -50%); cursor: pointer; }
+
+.container2 { width: 80%; height: 900px; margin: 0 auto; position: relative; overflow: hidden; }
+.container2 .left { position: absolute; top: 15%; left: 0; width: 50%; float: left; padding: 100px 0; }
+.container2 .left h1 { font-size: 2.5em; line-height: 1.5em; font-weight: 500; }
+.container2 .left h1 span { color: #CEBFD8 }
+.container2 .left h2 { font-size: 1.2em; line-height: 1.6em; margin: 50px 0; }
+.container2 .left a { font-size:1.5em; color: #fff; text-align: center; line-height: 55px; font-weight: 500; }
+.container2 .left a div { background-color: #CEBFD8;  width: 160px; height: 55px; }
+.container2 .right { position: absolute; top: 20%; left: 50%; width: 50%; float: left; overflow: hidden; position: relative; }
+.container2 .right #signline { width: 400px; height: 460px; border: 10px solid #CEBFD8; margin: 0 auto; position: relative; }
+.container2 .right #signimg img { width: 500px; height: 375px; position: absolute; top: 10%; left: 50px; box-shadow: -20px 20px 30px #999; }
+
+.container3 { width: 90%; height: 900px; margin: 0 auto; position: relative; overflow: hidden; }
+.container3 .left { position: absolute; top: 20%; left: 0; width: 50%; height: 50%; float: left; position: relative; }
+.container3 .left #take1 img { width: 100%; float: left; }
+.container3 .left #takebg { width: 100%; height: 80%; background-color: #CEBFD8; opacity: .3; position: relative; }
+.container3 .left #taketxt { opacity: 1; margin: 0 auto; width: 80%; height: 60%; background-color: #CEBFD8; color: #fff; text-align: center; overflow: hidden; position: absolute; top: 90px; left: 70px; box-shadow: 10px 10px 50px #999; }
+.container3 .left #taketxt h1 { font-size: 2em; margin-top: 10%; }
+.container3 .left #taketxt h2 { font-size: 16px; margin: 10% 0; line-height: 25px; }
+.container3 .right { position: absolute; top: 20%; left: 50%; width: 50%; float: left; }
+.container3 .right #take2 img { width: 100%; }
+
+.container4 { position: relative; width: 100%; height: 83%; margin: 0 auto; overflow: hidden; }
+.container4 .left { position: absolute; top: 20%; left: 10%; width: 50%; float: left; padding-top: 80px; }
+.container4 .left h1 { font-size: 2.5em; font-weight: 500; }
+.container4 .left h2 { font-size: 1.2em; line-height: 1.5em; margin: 50px 0; }
+.container4 .right { position: absolute; top: 20%; left: 50%; width: 50%; float: left; }
+
+/**************footer**************/
+
+footer { width: 100%; height: 17%; background-color: #222; position: relative;bottom: 0; }
+footer #box { width: 90%;  margin: 0 auto; }
+footer ul { float: left; color: #efefef; width: 120px; text-align: center; line-height: 30px; padding-top: 10px; }
+footer #txtbox ul { width: 70%; float: left; clear: both; position: absolute; bottom: 5px; }
+footer #txtbox ul li { float: left; padding:0 10px; }

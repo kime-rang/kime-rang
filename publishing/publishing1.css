@@ -1,0 +1,28 @@
+@charset "utf-8";
+html { overflow: scroll; overflow-x: hidden; }
+::-webkit-scrollbar {   width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */ }
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb { background: #FF0000; }
+ #gnb { position: fixed; top:40%; right: 10px; bottom: 50%; margin: auto; height: 240px; z-index: 100; }
+#gnb li a { width: 20px; height: 20px; }
+#gnb li:nth-child(1).on a, #gnb li:nth-child(1):hover a { background: url(../img/publishing1/on.png) no-repeat 100% 100% ;
+background-size: contain; ; }
+#gnb li:nth-child(2).on a, #gnb li:nth-child(2):hover a { height: 20px; background: url(../img/publishing1/on.png); }
+#gnb li:nth-child(3).on a, #gnb li:nth-child(3):hover a { background: url(../img/publishing1/on.png); }
+#gnb li:nth-child(4).on a, #gnb li:nth-child(4):hover a { background: url(../img/publishing1/on.png); }
+nav { width: 100%; height: 60px; padding-top:10px; background-color: #fff; position: fixed; top: 0; overflow: hidden; }
+#gnb li { margin: 10px 0; }
+#logo { width: 200px; position:absolute; left: 10% }
+#tab { position: absolute; left: 30%; color: #385138; font-weight: bold; }
+#tab li { width: 150px; float: left; text-align: center; line-height: 60px; }
+#tab li:first-child { color: #C9D227 }
+.left { width: 45%; padding: 10% 0 0 5%; }
+h1 { font-size: 2.5em; }
+h2 { font-size: 5.5em; font-weight: 500; margin: 20px 0 0 0; }
+.inkbox { width: 250px; height: 70px; border: 1px solid #010101; margin: 120px 0; }
+.inkbox p { font-size: 1.8em; line-height: 70px; text-align: center; }
+.container1 { width: 100%; height:1000px; background: url(../img/publishing1/01.png) no-repeat; background-size: cover; margin-top: 60px; }
+.container2 { width: 100%; height: 1000px; background: url(../img/publishing1/02.png) no-repeat;background-size: cover; }
+.container3 { width: 100%; height: 1000px; background: url(../img/publishing1/03.png) no-repeat;background-size: cover; }
+.container4 { width: 100%; height: 1000px; background: url(../img/publishing1/04.png) no-repeat;background-size: cover; color: #fff }

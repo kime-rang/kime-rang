@@ -1,0 +1,76 @@
+@charset "uft-8";
+
+body {
+	background-color: rgba(248,248,248,1);
+	font-family:"Yang Rounded", "나눔고딕","맑은 고딕",돋움,sans-serif;
+	color: #111;
+	line-height: 1.4;
+	text-align: center;
+}
+
+form {
+	background-color: #fff;
+	border:2px dotted #111;
+	width: 800px ;
+	margin:20px auto ;
+}
+
+table {
+	margin:0 auto;
+	border-spacing: 0px;
+}
+
+caption {
+	font-size: 24px;
+	font-weight: bold;
+	color: #666;
+	margin:20px 0;
+}
+th,td {
+	padding: 5px 10px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	border-top: 1px solid #f1f8fe;
+	border-right: 1px solid #cdd2d8;
+	border-bottom: 1px solid #cdd2d8;
+}
+th {
+	width:  150px;
+	text-align: right;
+	background-color: #e0e9f0;	
+}
+td {
+	width: 600px;
+	text-align: left;
+	background-color: #efefef;
+}
+table input {
+	border:1px solid #000;
+	outline: none;
+	padding: 2px;
+}
+
+table input:hover {
+	background-color: #e0e9f0;
+}
+table button {
+	border:none;
+	background-color: #e3e3e3;
+	border-radius: 6px;
+	padding: 2px 4px;
+	font-size: 14px;
+	color: #333;
+	outline: none;
+}
+table button:hover {
+	background-color: #333;
+	color: #efefef;
+}
+form > button {
+	margin:20px 4px;
+	padding: 4px 14px;
+	border:none;
+	background-color: #4682b4;
+	color: #efefef;
+	border-radius: 5px;
+}
